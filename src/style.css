@@ -287,9 +287,35 @@ sup {
 3. Remove gaps between table borders by default.
 */
 
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  padding: 8px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  place-content: center;
+}
+
+.bg-primary {
+  background-color: #E7F0DC;
+}
+
+.bg-secondary {
+  background-color: #243642;
+}
+
+.text-custom {
+  color: #124076;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 /*
@@ -550,6 +576,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -558,20 +618,16 @@ video {
   display: table;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-40 {
-  height: 10rem;
+.grid {
+  display: grid;
 }
 
 .h-20 {
   height: 5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-4 {
+  height: 1rem;
 }
 
 .h-2 {
@@ -582,8 +638,12 @@ video {
   width: 100%;
 }
 
-.border-2 {
-  border-width: 2px;
+.place-content-center {
+  place-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .border {
@@ -595,19 +655,9 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-gray-600 {
+.bg-slate-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .text-center {
