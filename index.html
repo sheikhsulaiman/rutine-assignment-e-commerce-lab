@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EdTE-Rutine July 2024</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -32,6 +33,46 @@
 
       <div class="h-2 bg-secondary"></div>
 
+      <form id="session-filter-form">
+        <div class="session-filter-container flex items-center justify-center">
+          <button
+            type="button"
+            class="flex items-center p-2 m-2 border-black border gap-2 rounded-md session-item"
+            data-session="session-23-24"
+          >
+            2023-2024
+          </button>
+          <button
+            type="button"
+            class="flex items-center p-2 m-2 border-black border gap-2 rounded-md session-item"
+            data-session="session-22-23"
+          >
+            2022-2023
+          </button>
+          <button
+            type="button"
+            class="flex items-center p-2 m-2 border-black border gap-2 rounded-md session-item"
+            data-session="session-21-22"
+          >
+            2021-2022
+          </button>
+          <button
+            type="button"
+            class="flex items-center p-2 m-2 border-black border gap-2 rounded-md session-item"
+            data-session="session-20-21"
+          >
+            2020-2021
+          </button>
+          <button
+            type="button"
+            class="flex items-center p-2 m-2 border-black border gap-2 rounded-md session-item"
+            data-session="session-19-20"
+          >
+            2019-2020
+          </button>
+        </div>
+      </form>
+
       <table>
         <thead>
           <tr class="border border-black">
@@ -50,7 +91,7 @@
           </tr>
         </thead>
         <tbody class="text-center">
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="5">Saturday</td>
             <td>2023-2024</td>
             <td rowspan="1" colspan="2"></td>
@@ -64,15 +105,15 @@
             <td rowspan="1" colspan="2"></td>
             <td rowspan="5"></td>
           </tr>
-          <tr>
+          <tr class="session-22-23">
             <td>2022-2023</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-21-22">
             <td>2021-2022</td>
             <td rowspan="1" colspan="2">
               CSE 219 (AAW)<br />Tutorial Room-1001
@@ -80,7 +121,7 @@
             <td rowspan="1" colspan="2">
               ET 215 (MRK)<br />Tutorial Room-1001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ET 217 (MRK)<br />Tutorial Room-2001
             </td>
@@ -88,7 +129,7 @@
               PROG 212 (AH)<br />Sessional G-1 Room-1201
             </td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td>2020-2021</td>
             <td rowspan="1" colspan="2">
               ICTE 4363 (RI)<br />Tutorial Room-4001
@@ -96,7 +137,7 @@
             <td rowspan="1" colspan="2">
               ICTE 4331 (SA)<br />Tutorial Room-4001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ICTE 4332 (SA)<br />Lab G-1 Room-1202
             </td>
@@ -104,14 +145,14 @@
               ICTE 4332 (SA)<br />Sessional G-2 Room-1202
             </td>
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td>2019-2020</td>
             <td colspan="9"></td>
           </tr>
           <tr>
             <td colspan="12" class="bg-secondary"></td>
           </tr>
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="7">Sunday</td>
             <td>2023-2024</td>
             <td rowspan="1" colspan="2">
@@ -125,13 +166,13 @@
             <td rowspan="1" colspan="2">HIS 109 (SN)<br />Lecture Room-4001</td>
             <td rowspan="7"></td>
           </tr>
-          <tr>
+          <tr class="session-22-23">
             <td rowspan="2">2022-2023</td>
             <td rowspan="2" colspan="2">
               MATH 217 (SCS)<br />Lecture Room-4001
             </td>
             <td rowspan="2" colspan="2">ET 205 (ZN)<br />Lecture Room-4001</td>
-            
+
             <td rowspan="1" colspan="2">
               CSE 202 (MA)<br />Sessional G-1 Room-4701
             </td>
@@ -139,8 +180,7 @@
               CSE 202 (MA)<br />Sessional G-2 Room-4701
             </td>
           </tr>
-          <tr>
-            
+          <tr class="session-22-23">
             <td rowspan="1" colspan="2">
               CSE 204 (SA)<br />Sessional G-2 Room-2701
             </td>
@@ -148,19 +188,19 @@
               CSE 204 (SA)<br />Sessional G-1 Room-2701
             </td>
           </tr>
-          <tr>
+          <tr class="session-21-22">
             <td>2021-2022</td>
             <td rowspan="1" colspan="2">
               ET 215 (MRK)<br />Tutorial Room-2001
             </td>
             <td rowspan="1" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2">ET217(MRK)<br />Lecture Room-4001</td>
             <td rowspan="1" colspan="2">
               PROG 211 (AH)<br />Lecture Room-2001
             </td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td rowspan="2">2020-2021</td>
             <td rowspan="1" colspan="2">
               ICTE 4336 (Fl)<br />Sessional G-1 Room-27011
@@ -168,7 +208,7 @@
             <td rowspan="1" colspan="2">
               ICTE 4364 (RI)<br />Sessional G-2 Room-4701
             </td>
-            
+
             <td rowspan="2" colspan="2">
               ACC 4301 (RB)<br />Tutorial Room-1001
             </td>
@@ -176,22 +216,21 @@
               ICTE 4333 (RB)<br />Lecture Room- 1001
             </td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td rowspan="1" colspan="2">
               ICTE 4364 (RI)<br />Sessional G-2 Room-4701
             </td>
             <td rowspan="1" colspan="2">
               ICTE 4364 (RI)<br />Sessional G-1 Room-4701
             </td>
-            
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td>2019-2020</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2">
               ICTE 4439 (MDK)<br />Lecture Room-2001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ICT 4461 (RH)<br />Lecture Room-2001
             </td>
@@ -200,7 +239,7 @@
           <tr>
             <td colspan="12" class="bg-secondary"></td>
           </tr>
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="7">Monday</td>
             <td>2023-2024</td>
             <td rowspan="1" colspan="2"></td>
@@ -213,19 +252,19 @@
               DS 107 (SMRH)<br />Lecture Room- 1001
             </td>
           </tr>
-          <tr>
+          <tr class="session-22-23">
             <td>2022-2023</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2">ET 205 (ZN)<br />Tutorial Room-2001</td>
-            
+
             <td rowspan="1" colspan="2">CSE 201 (MA)<br />Lecture Room-4001</td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-21-22">
             <td rowspan="2">2021-2022</td>
             <td rowspan="2" colspan="2"></td>
             <td rowspan="2" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2">
               ET 214 (ZF)<br />Sessional G-1 Room-2701
             </td>
@@ -233,8 +272,7 @@
               ET 218 (MRK)<br />Sessional G-2 Room-4701
             </td>
           </tr>
-          <tr>
-            
+          <tr class="session-21-22">
             <td rowspan="1" colspan="2">
               ET 218 (MRK)<br />Sessional G-1 Room-4701
             </td>
@@ -242,7 +280,7 @@
               ET 218 (MRK)<br />Sessional G-1 Room-4701
             </td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td>2020-2021</td>
             <td rowspan="1" colspan="2">
               ICTE 4333 (RB)<br />Tutorial Room-2001
@@ -250,7 +288,7 @@
             <td rowspan="1" colspan="2">
               ICTE 4335 (Fl)<br />Lecture Room-4001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ACC 4301 (RB)<br />Lecture Room- 1001
             </td>
@@ -258,13 +296,13 @@
               ICTE 4363 (RI)<br />Lecture Room-4001
             </td>
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td rowspan="2">2019-2020</td>
             <td rowspan="2" colspan="2"></td>
             <td rowspan="1" colspan="2">
               ICT 4462 (RH)<br />Sessional G-2 Room-2701
             </td>
-            
+
             <td rowspan="2" colspan="2">
               ICT 4461 (RH)<br />Tutorial Room-2001
             </td>
@@ -272,16 +310,15 @@
               ICT 4459 (AR)<br />Lecture Room-2001
             </td>
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td rowspan="1" colspan="2">
               ICT 4460 (AR)<br />Sessional G-1 Room-4701
             </td>
-            
           </tr>
           <tr>
             <td colspan="12" class="bg-secondary"></td>
           </tr>
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="5">Tuesday</td>
             <td>2023-2024</td>
             <td rowspan="1" colspan="2"></td>
@@ -291,11 +328,11 @@
             <td rowspan="1" colspan="2">ET 103 (AZ)<br />Lecture Room-2001</td>
             <td rowspan="5"></td>
           </tr>
-          <tr>
+          <tr class="session-22-23">
             <td>2022-2023</td>
             <td rowspan="1" colspan="2">CSE 203 (SA)<br />Lecture Room-4001</td>
             <td rowspan="1" colspan="2">ET 207 (ZN)<br />Lecture Room-4001</td>
-            
+
             <td rowspan="1" colspan="2">
               ET 205 (ZN)<br />Tutorial Room- 1001
             </td>
@@ -303,35 +340,35 @@
               CSE 201 (MA)<br />Tutorial Room-4001
             </td>
           </tr>
-          <tr>
+          <tr class="session-21-22">
             <td>2021-2022</td>
             <td rowspan="1" colspan="2">
               PROG 211 (AH)<br />Tutorial Room- 1001
             </td>
             <td rowspan="1" colspan="2">ET 213 (ZF)<br />Tutorial Room-1001</td>
-            
+
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td>2020-2021</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2">
               ICTE 4335 (Fl)<br />Tutorial Room-2001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ICTE 4331 (SA)<br />Tutorial Room-4001
             </td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td>2019-2020</td>
             <td rowspan="1" colspan="2">
               ICTE 4439 (MDK)<br />Tutorial Room-2001
             </td>
             <td rowspan="1" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2">
               EDU 4413 (ZF)<br />Lecture Room-2001
             </td>
@@ -344,47 +381,46 @@
             <td rowspan="9">Wednesday</td>
           </tr>
 
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="2">2023-2024</td>
             <td rowspan="1" colspan="2">
               PROG 102 (RS)<br />Sessional G-1 Room-4701
             </td>
             <td rowspan="1" colspan="2">
-                PROG 102 (RS)<br />Sessional G-2 Room-2701
+              PROG 102 (RS)<br />Sessional G-2 Room-2701
             </td>
             <td rowspan="9"></td>
-            
+
             <td rowspan="2" colspan="2">ET 103 (AZ)<br />Tutorial Room-2001</td>
             <td rowspan="2" colspan="2">
               DS 107 (SMRH)<br />Tutorial Room- 1001
             </td>
           </tr>
-          <tr>
+          <tr class="session-23-24">
             <td rowspan="1" colspan="2">
               ENG 106 (NH)<br />Sessional G-2 Room-2701
             </td>
             <td rowspan="1" colspan="2">
               ENG 106 (NH)<br />Sessional G-1 Room-4701
             </td>
-            
           </tr>
-          <tr>
+          <tr class="session-22-23">
             <td>2022-2023</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2">
               CSE 203 (SA)<br />Tutorial Room-4001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               MATH 217 (SCS)<br />Tutorial Room-4001
             </td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-21-22">
             <td>2021-2022</td>
             <td rowspan="1" colspan="2">ET 213 (ZF)<br />Lecture Room-2001</td>
             <td rowspan="1" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2">
               CSE 219 (AAW)<br />Tutorial Room-1001
             </td>
@@ -392,21 +428,21 @@
               PROG 212 (AH)<br />Sessional G-2 Room-4701
             </td>
           </tr>
-          <tr>
+          <tr class="session-20-21">
             <td>2020-2021</td>
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2"></td>
-            
+
             <td rowspan="1" colspan="2"></td>
             <td rowspan="1" colspan="2"></td>
           </tr>
-          <tr>
+          <tr class="session-19-20">
             <td rowspan="2">2019-2020</td>
             <td rowspan="2" colspan="2"></td>
             <td rowspan="2" colspan="2">
               EDU 4413 (ZF)<br />Tutorial Room-2001
             </td>
-            
+
             <td rowspan="1" colspan="2">
               ICT 4462 (RH)<br />Sessional G-1 Room-2701
             </td>
@@ -414,8 +450,7 @@
               ICT 4459 (AR)<br />Tutorial Room-2001
             </td>
           </tr>
-          <tr>
-            
+          <tr class="session-19-20">
             <td rowspan="1" colspan="2">
               ICT 4460 (AR)<br />Sessional G-2 Room-4701
             </td>
